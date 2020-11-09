@@ -10,6 +10,10 @@ public class Crime implements Serializable {
     private Date rn;
     private boolean gh;
 
+    public Crime() {
+        rn = new Date();
+    }
+
     public Crime(String tm) {
         Id = UUID.randomUUID();
         this.tm = tm;
